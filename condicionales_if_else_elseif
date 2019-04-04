@@ -1,7 +1,9 @@
+// === --> IGUAL |||| !== --> DISTINTO/DIFERENTE
+
 const puntuacion = 1000;
 const edad = 18;
 
-if (puntuacion != 1000) {
+if (puntuacion !== 1000) {
 	console.log("Ya estás logueado!");
 }
 
@@ -9,6 +11,9 @@ else {
 	console.log("Necesitas loguearte amigo!");
 }
 
+> Ya estás logueado
+
+//OTRO EJEMPLO (PERO CON < > =)
 
 if (edad >= 18) {
 	console.log("ERES MAYOR DE EDAD, PERMISO PARA ENTRAR");
@@ -16,3 +21,26 @@ if (edad >= 18) {
 else {
 	console.log("ACCESO DENEGADO, DEBE DE SER MAYOR DE EDAD");
 }
+
+
+> ERES MAYOR DE EDAD, PERMISO PARA ENTRAR
+
+________________________
+
+// Si falla la primera condición, el código lee el "ELSE" directamente. 
+const carrito = 1001;
+const dinero_disponible = 1000;
+tarjeta = true;
+
+if (carrito > dinero_disponible) {
+	console.log("No tienes dinero suficiente, lo sentimos");
+}
+else if (tarjeta) {
+	console.log("PAGO CON TARJETA ACEPTADO");
+}
+
+else {
+	console.log("FONDOS INSUFICIENTES, PAGO DENEGADO")
+}
+
+> PAGO DENEGADO
