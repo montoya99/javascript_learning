@@ -44,3 +44,69 @@ else {
 }
 
 > PAGO DENEGADO
+
+_______________________________
+
+
+// || --> SE TIENEN QUE CUMPLIR UNA DE LAS CONDICIONES DEL IF ( || --> OR/O).
+
+const carrito = 1001;
+const dinero_disponible = 1000;
+const tarjeta = true;
+
+if (dinero_disponible >= carrito || tarjeta) {
+	console.log("PAGO ACEPTADO!");
+	
+}
+
+else {
+	console.log("FONDOS INSUFICIENTES, PAGO DENEGADO");
+}
+
+
+
+// && --> SE TIENEN QUE CUMPLIR TODAS LAS CONDICIONES DEL IF ( || --> AND/Y).
+
+const carrito = 1000;
+const dinero_disponible = 1000;
+const tarjeta = true;
+
+if (dinero_disponible >= carrito && tarjeta) {
+	console.log("PAGO ACEPTADO!");
+	
+}
+
+else {
+	console.log("FONDOS INSUFICIENTES, PAGO DENEGADO");
+}
+
+//OTRO EJEMPLO DE && (CON HORAS)
+
+let hora = 13;
+
+if (hora > 00 && hora < 12) {
+	console.log("Buenos Días Amigo!");
+}
+else if (hora > 12 && hora < 19) {
+	console.log("Buenas Tardes Amigo!");
+}
+else if (hora > 19 && hora < 00) {
+	console.log ("Buenas Noches Amigo!");
+}
+else {
+	console.log ("Horario Inválido!");
+}
+
+
+
+// TERNARIO --> UN IF EN UNA LÍNEA.
+
+let logueado = true;
+
+console.log ( logueado ? "Estás logueado" : "No estás logueado");
+
+> Estás logueado
+
+
+
+
