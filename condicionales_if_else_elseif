@@ -1,0 +1,18 @@
+const puntuacion = 1000;
+const edad = 18;
+
+if (puntuacion != 1000) {
+	console.log("Ya estás logueado!");
+}
+
+else {
+	console.log("Necesitas loguearte amigo!");
+}
+
+
+if (edad >= 18) {
+	console.log("ERES MAYOR DE EDAD, PERMISO PARA ENTRAR");
+}
+else {
+	console.log("ACCESO DENEGADO, DEBE DE SER MAYOR DE EDAD");
+}
