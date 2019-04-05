@@ -1,0 +1,28 @@
+//LOOPS FOR / WHILE / DO WHILE
+
+// FOR Loop
+
+
+// EJEMPLO CONTADOR 1-10
+
+for (let i = 0; i <= 10; i++) {
+	console.log (` Numero: ${i} `);
+}
+
+
+
+
+// EJEMPLO TOP 3 MARCAS
+
+const topMarcas = ["Nike", "GUCCI", "Versace"];
+
+for (let i = 0; i <3; i++) {
+	console.log (` TOP 3 Brands: TOP ${i+1}: ${topMarcas[i]} `);
+}
+
+console.log ("ESTE HA SIDO MI TOP MARCAS 2019, ESPERO QUE LES HAYA GUSTADO, UN SALUDO!");
+
+>  TOP 3 Brands: TOP 1: Nike 
+   TOP 3 Brands: TOP 2: GUCCI 
+   TOP 3 Brands: TOP 3: Versace 
+   ESTE HA SIDO MI TOP MARCAS 2019, ESPERO QUE LES HAYA GUSTADO, UN SALUDO!
