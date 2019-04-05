@@ -26,3 +26,26 @@ console.log ("ESTE HA SIDO MI TOP MARCAS 2019, ESPERO QUE LES HAYA GUSTADO, UN S
    TOP 3 Brands: TOP 2: GUCCI 
    TOP 3 Brands: TOP 3: Versace 
    ESTE HA SIDO MI TOP MARCAS 2019, ESPERO QUE LES HAYA GUSTADO, UN SALUDO!
+
+
+// WHILE Loop
+const carritoCompra = ["Huevos", "Avena", "Atún"] ;
+
+let i = 0;
+
+while ( i < carritoCompra.length) {
+	console.log(` Tengo que comprar: ${i+1}º: ${carritoCompra[i]}`)
+	i++;
+}
+
+// DO WHILE --> SE EJECUTA EL CÓDIGO SOLO UNA VEZ (ESO SI LA CONDICIÓN NO ES VÁLIDA) SIN IMPORTAR SI ES VÁLIDA LA CONDICIÓN.
+// SI POR OTRO LADO LA CONDICIÓN ES VÁLIDA ACTUA DE LA MISMA FORMA QUE SUS ANTECESORES FOR/WHILE.
+
+let i = 11;
+ do {
+	console.log (i);
+	i++;
+ }
+ while (i < 10);
+ 
+ > 11
