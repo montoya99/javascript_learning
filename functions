@@ -11,9 +11,9 @@ saludar ("Paula", "Asistenta de Compras", "Y.");
 saludar ("Lorena", "Jefe de Ventas", "Z.");
 
 
-//ASIGNAR VALORES POR DEFECTO (nombre = "Desconocido", trabajo, funcion)
+//ASIGNAR VALORES POR DEFECTO (nombre = "Desconocido", trabajo = "Desconocido", funcion = "Desconocido")
 
-function saludar (nombre = "Desconocido", trabajo, funcion) {
+function saludar (nombre = "Desconocido", trabajo, funcion="Desconocido") {
     console.log ("Hola Sr/a " + nombre + ", su nuevo puesto será: " + trabajo + ", y consistirá en " + funcion);
 
 }
@@ -21,4 +21,9 @@ function saludar (nombre = "Desconocido", trabajo, funcion) {
 saludar ("Miguel Ángel", "Front-End Developer", "gestionar el desarrollo de la front-end de la página.");
 saludar ("Cristina", "Traductora", "X.");
 saludar ("Paula", "Asistenta de Compras", "Y.");
-saludar ("", "Jefe de Ventas", "Z");
+saludar ("lorena", "Jefe de Ventas");
+
+> Hola Sr/a Miguel Ángel, su nuevo puesto será: Front-End Developer, y consistirá en gestionar el desarrollo de la front-end de la página.
+scripts.js:2 Hola Sr/a Cristina, su nuevo puesto será: Traductora, y consistirá en X.
+scripts.js:2 Hola Sr/a Paula, su nuevo puesto será: Asistenta de Compras, y consistirá en Y.
+scripts.js:2 Hola Sr/a lorena, su nuevo puesto será: Jefe de Ventas, y consistirá en Desconocido
