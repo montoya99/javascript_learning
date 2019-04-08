@@ -1,0 +1,22 @@
+//FORMA NO RECOMENDABLE!!!
+const nombre = "Miguel Ángel";
+const trabajo = "Desarrollador web";
+const mensajeDiv = document.querySelector("#mensaje");
+
+
+let html = "<ul>" +
+                "<li> Nombre: " + nombre + "</li>" +
+                "<li> Trabajo: " + trabajo + "</li>" +
+           "</ul>";
+
+mensajeDiv.innerHTML = html;
+
+//FORMA RECOMENDABLE (TOP!!!)
+const nombre = "Miguel Ángel";
+const trabajo = "Desarrollador web";
+const mensajeDiv = document.querySelector("#mensaje");
+
+let html = `<ul>
+                <li> Nombre: ${nombre} </li>
+                <li> Trabajo: ${trabajo} </li>
+           </ul>`;
