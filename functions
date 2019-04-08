@@ -9,3 +9,16 @@ saludar ("Miguel Ángel", "Front-End Developer", "gestionar el desarrollo de la 
 saludar ("Cristina", "Traductora", "X.");
 saludar ("Paula", "Asistenta de Compras", "Y.");
 saludar ("Lorena", "Jefe de Ventas", "Z.");
+
+
+//ASIGNAR VALORES POR DEFECTO (nombre = "Desconocido", trabajo, funcion)
+
+function saludar (nombre = "Desconocido", trabajo, funcion) {
+    console.log ("Hola Sr/a " + nombre + ", su nuevo puesto será: " + trabajo + ", y consistirá en " + funcion);
+
+}
+
+saludar ("Miguel Ángel", "Front-End Developer", "gestionar el desarrollo de la front-end de la página.");
+saludar ("Cristina", "Traductora", "X.");
+saludar ("Paula", "Asistenta de Compras", "Y.");
+saludar ("", "Jefe de Ventas", "Z");
