@@ -1,0 +1,13 @@
+// THIS en Object Literal
+
+let perfil = {
+    nombre: "Miguel Ángel",
+    edad: 20,
+    añoNacimiento: function() {
+        return new Date().getFullYear() - this.edad;
+    }
+}
+
+console.log(perfil.añoNacimiento());
+
+> 1999
