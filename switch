@@ -1,0 +1,44 @@
+const metodoPago = "Efectivo";
+
+switch(metodoPago) {
+	case "Tarjeta":
+		console.log(`Pagaste con ${metodoPago}`);
+		break;
+	case "Efectivo":
+		console.log(`Pagaste con dinero en ${metodoPago}`);
+		break;
+	default:
+		console.log("Aún no has pagado o método de pago inválido!");
+		break;
+}
+
+> Pagaste con dinero en Efectivo
+
+//EJEMPLO MÁS COMPLETO
+
+const metodoPago1 = "Cheque";
+const metodoPago2 = "Efectivo";
+
+switch(metodoPago1) {
+	case "Tarjeta":
+		console.log(`Pagaste con ${metodoPago1}`);
+		break;
+	case "Efectivo":
+		console.log(`Pagaste con dinero en ${metodoPago2}`);
+		break;
+	default:
+		console.log(`Aún no has pagado o método de pago inválido, por favor paga con ${metodoPago1} o con ${metodoPago2} `);
+		break;
+}
+
+switch(metodoPago2) {
+	case "Tarjeta":
+		console.log(`Pagaste con ${metodoPago1}`);
+		break;
+	case "Efectivo":
+		console.log(`Pagaste con dinero en ${metodoPago2}`);
+		break;
+	default:
+		console.log(`Aún no has pagado o método de pago inválido, por favor paga con ${metodoPago1} o con ${metodoPago2} `);
+		break;
+}
