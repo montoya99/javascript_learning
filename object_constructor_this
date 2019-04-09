@@ -1,0 +1,32 @@
+// FORMA OLD
+function Perfil (nombre, apellidos) {
+    this.nombre = nombre;
+    this.apellidos = apellidos;
+}
+
+let perfil1 = new Perfil ("Miguel Ángel", "Montoya Torregrosa");
+let perfil2 = new Perfil ("Cristina", "Torregrosa");
+let perfil3 = new Perfil ("Lorena", "García");
+
+console.log(tarea1);
+console.log(tarea2);
+console.log(tarea3);
+
+// ____________________________________
+
+// FORMA NEW!!!
+
+class Perfil {
+    constructor(nombre, urgencia) {
+        this.tarea = nombre;
+        this.urgencia = urgencia;
+    }
+}
+
+const perfil1 = new Perfil("Aprender Marketing Digital", "Urgente");
+const perfil2 = new Perfil("Ir al GYM", "Urgente");
+const perfil3 = new Perfil("Dejar de ver YT", "Urgente");
+
+console.log(perfil1);
+console.log(perfil3);
+console.log(perfil3);
