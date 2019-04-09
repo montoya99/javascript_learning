@@ -1,0 +1,34 @@
+// FECHAS
+
+let mesHoy = new Date().getMonth() + 1;
+console.log(mesHoy);
+
+// TIPOS DE GET EN FECHAS
+// .getMonth --> (0 = Enero);
+// .getDay --> Día de la semana (Domingo 0, Lunes 1 , etc.);
+// .getDate --> Día Actual (1, 2, 3, etc.);
+// .getFullYear --> Año actual;
+// .getMinutes --> Minutos de la hora actual;
+// .getHours --> Hora Actual;
+// .getTime --> TimeStamp (milisegundos);
+// .getFullYear --> cambiar/sobreescribir valor;
+
+//____________________
+
+//EJEMPLO SACAR DÍA DE UNA FECHA DETERMINADA
+
+let diaHoy = new Date ("8-8-1999");
+let diaGG = diaHoy.getDate();
+console.log(diaGG);
+
+> 8
+
+//EJEMPLO SACAR DÍA DE LA SEMANA DE UNA FECHA DETERMINADA
+
+let diaHoy = new Date ("8-8-1999");
+let diaGG = diaHoy.getDay();
+console.log(diaGG);
+
+> 0
+
+// 0 = Domingo
