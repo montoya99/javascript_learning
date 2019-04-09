@@ -1,0 +1,26 @@
+// Property methods
+
+let musica = {
+    reproducir: function (cancion, artista) {
+        console.log("Reproduciendo: " + cancion + ", del artista: " + artista);
+    }
+}
+
+musica.reproducir("7 Rings", "Ariana Grande");
+musica.reproducir("Mía", "Bad Bunny feat. Drake");
+
+> Reproduciendo: 7 Rings, del artista: Ariana Grande
+  Reproduciendo: Mía, del artista: Bad Bunny feat. Drake
+
+// _____________________________________
+
+// IIFE (FUNCIONES QUE SE LLAMAN AUTOMÁTICAS DEBIDO A SU SINTAXIS)
+
+// Ejemplo:
+
+(function(coche){
+    console.log ("THIS IS MY DREAM CAR: " + coche);
+}) 
+("Lamborghini Huracán Performante");
+
+> THIS IS MY DREAM CAR: Lamborghini Huracán Performante
