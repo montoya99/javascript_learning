@@ -107,23 +107,17 @@ console.log ( logueado ? "Estás logueado" : "No estás logueado");
 
 > Estás logueado
 
+// TERNARIO COMPLETO (MISMO EJEMPLO QUE EL DE TARJETA Y DINERO EN CARRITO)
+
+let dinero_disponible = 1000;
+let dinero_carrito = 1001;
+let tarjeta = true;
+
+console.log(dinero_disponible >= dinero_carrito || tarjeta ? "PAGO ACEPTADO" : "PAGO DENEGADO");
+
+> PAGO ACEPTADO
+
 
 // SWITCH (CONDICIONALES PERO CON MÁS ORDEN)
 
 const metodoPago = "Efectivo";
-
-
-switch(metodoPago) {
-	case "Tarjeta":
-		console.log(`Pagaste con ${metodoPago}`);
-		break;
-	case "Efectivo":
-		console.log(`Pagaste con dinero en ${metodoPago}`);
-		break;
-	default:
-		console.log("Aún no has pagado o método de pago inválido");
-		break;
-}
-
-> Pagaste con dinero en Efectivo
-
