@@ -32,3 +32,4 @@ console.log(diaGG);
 > 0
 
 // 0 = Domingo
+// Puede servir para validar dechas de entregas (Con una validación de PHP)
