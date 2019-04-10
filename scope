@@ -1,1 +1,13 @@
+// SCOPE (var, sobreescribe variables, consejo: const / let)
 
+
+var musica = "Rock";
+
+if(musica) {
+	var musica = "House";
+	console.log("Dentro del IF " + musica);
+}
+console.log("Fuera del IF " + musica);
+
+> Dentro del IF House
+  Fuera del IF House
