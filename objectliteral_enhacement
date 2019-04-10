@@ -1,0 +1,23 @@
+// Object Literal Enhacement [a diferencia del destructuring, que extrae elementos, éste los introduce]
+
+const banda = "Metallica";
+const genero = "Metal";
+const canciones = ["1stSong", "2ndSong", "3rdSong"];
+
+
+
+//forma anterior
+
+//	const metallica = {
+		banda,
+		genero,
+		canciones
+//	}
+
+
+
+// forma nueva (BETTER THAT THE OTHER ONE!)
+
+const metallica = { banda, genero, canciones }
+
+console.log(metallica);
