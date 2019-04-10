@@ -15,7 +15,7 @@ let mayores = personas.filter(personas => personas.edad > 25);
 
 console.log(mayores);
 
-// Extraer la información de Alejandra (.find)
+// Extraer la información de Miguel (.find)
 
 let miguel = personas.find(personas => personas.nombre === "Miguel");
 
