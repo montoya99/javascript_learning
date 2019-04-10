@@ -1,0 +1,41 @@
+// .filter | .find | .reduce 
+
+const personas = [
+	{nombre: "Miguel", edad: 20, aprendiendo: "JavaScript"},
+	{nombre: "Pablo", edad: 50},
+	{nombre: "Alejandra", edad: 23},
+	{nombre: "Karen", edad: 28},
+	{nombre: "Juan", edad: 33}
+];
+
+
+// Obtener las personas mayores de 25 años (.filter)
+
+let mayores = personas.filter(personas => personas.edad > 25);
+
+console.log(mayores);
+
+// Extraer la información de Alejandra (.find)
+
+let miguel = personas.find(personas => personas.nombre === "Miguel");
+
+console.log(miguel);
+
+// Extraer que está haciendo Miguel
+
+let {aprendiendo} = miguel;
+
+console.log(`Está aprendiendo ${aprendiendo}`);
+
+// (.reduce) // acumulador // [ejemplo edad total y luego con la división sacamos el promedio de la edad ]
+
+let total = personas.reduce((edadTotal, personas) => {
+	return edadTotal + personas.edad;
+}, 0);
+
+console.log(total / personas.length);
+
+> (3) [{…}, {…}, {…}]
+  {nombre: "Miguel", edad: 20, aprendiendo: "JavaScript"}
+  Está aprendiendo JavaScript
+  30.8
