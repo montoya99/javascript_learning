@@ -1,0 +1,32 @@
+// Destructuring
+
+const cliente = {
+	nombre: "Miguel",
+	tipo: "Premium",
+	funciones : {
+		programador : {
+			lenguajes: ["HTML5", "CSS3", "JS"]
+		},
+		ofimática : {
+			funcion4: "Word",
+			funcion5: "PowerPoint"
+		}
+	},
+	DNI: "48769040R"
+};
+
+console.log(cliente);
+
+// crear la variable (forma anterior)
+
+const nombreCliente = cliente.nombre;
+
+console.log(nombreCliente);
+
+console.log("===============");
+
+// crear la variable (forma Desctructuring nueva versión JS || + DUDA ACTIVA SOBRE EXTRACCIÓN DE DATO DE ARRAY)
+
+let {funciones: {programador: {lenguajes: {}} } } = cliente;
+
+console.log({});
