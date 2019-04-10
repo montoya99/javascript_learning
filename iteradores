@@ -1,0 +1,34 @@
+// ARREGLO
+
+const tareasPendientes = [ "Comer", "GYM", "JavaScript", "Estudiar", "Ocio"];
+
+// UN ARREGLO CON OBJETOS 
+
+const carrito = [
+	{id: "yogurt", producto: "Yogurt Proteinas"},
+	{id: "tortitas", producto: "Tortitas Maiz"},
+	{id: "avena", producto: "Copos de Avena"}
+];
+
+// OBJETO
+
+let coche = {
+	marca: "Lamborghini",
+	modelo: "Lamborghini Huracán Performante",
+	motor: "V12",
+	precio: 300000
+};
+
+
+// For each (no genera copia del arreglo)
+
+tareasPendientes.forEach(function(tarea){
+	console.log(tarea);
+});
+
+console.log("=================");
+// Map (genera copia del arreglo)
+
+tareasPendientes.map(function(tarea){
+	console.log(tarea);
+});ini
