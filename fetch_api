@@ -1,0 +1,26 @@
+// FETCH API / Y MOSTRAR RESULTADOS DE OTRO SITIO WEB CON JS con un endpoint (un link) 
+// EN ÉSTE CASO SE ANALIZA EL VALOR DEL BITCOIN EN EL ÚLTIMO MES
+
+
+var apiAddress = "https://api.coindesk.com/v1/bpi/historical/close.json";
+	
+// llamar a Fetch
+
+	fetch (apiAddress)
+		.then (respuesta => respuesta.json())
+		.then (datos => console.dir(datos))
+		.catch (e => console.error ("Something went wrong!")); 
+
+
+
+		// Una promesa a la espera del servidor (tipo GET)
+		// La respuesta se completa y la transforma en un JSON, ahora es turno de la segunda promesa.
+		// Datos listos, podemos trabajar con ellos
+		// El "catch" final es una excepción y previene de posibles errores durante la conversión.
+
+		// SINTAXIS:
+
+	// fetch( url )
+    // .then( r => r.json() )
+    // .then( data => console.info( data ) )
+		// .catch( e => console.error( 'Something went wrong' ) );
