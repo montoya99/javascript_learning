@@ -1,0 +1,35 @@
+// document.getElementsByClassName --> te muestra, depende de la posición que le insertes ([x]) la/s clase/s con ese mismo nombre, 
+la posición 0 será la propia class que estés insertando, y seguidamente todas las demás que coincidan o contengan ese nombre 
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+
+    var navegacion = document.getElementsByClassName("navegacion");
+
+    console.log(navegacion[0]);
+    
+    > <div id="navegacion" class="navegacion">
+    
+    console.log(navegacion[1]);
+    
+    > <div class="menu_navegacion">
+    
+    _____________
+    
+   // Otro ejemplo igual pero sin embargo no hay una segunda clase que iguale o contenga ese nombre
+
+    var contenido = document.getElementsByClassName ("contenido");
+
+    console.log(contenido [0]);
+    
+    > > <div id="contenido" class="contenido">
+    
+
+    var contenido = document.getElementsByClassName ("contenido");
+
+    console.log(contenido [1]);
+    
+    > undefined
+
+  });
+})();
