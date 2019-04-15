@@ -1,0 +1,52 @@
+//getElementById --> coger elemento ID
+
+//HTML:
+
+<div id="logo" class="logo">
+  <img src="img/logo.png">
+</div> <!--.logo-->
+
+
+ var logo = document.getElementById("logo");
+ 
+ console.log(logo);
+ 
+ > <div id="logo" class="logo">
+ 
+ ______________
+ 
+ 
+var navegacion = document.getElementById("navegacion"); // getelementbyid : coge el id navegacion
+
+navegacion.style.display = "none"; // hace que no lo muestre, lo oculta.
+ 
+ ______________
+ 
+ 
+//Funciones en consola para interactuar despues de realizar ésta funcion:
+
+--> logo //(debido a que has declarado la variable var logo a ese id logo)
+
+> <div id="logo" class="logo">
+
+______________
+
+--> logo.hasAttribute("class"); // (Te dice si la variable logo (div logo) tiene una clase
+
+> true //(true por que¿? porque el id logo tambien es clase logo por lo tant oexiste una clase en él.)
+
+______________
+
+--> logo.getAttribute("class"); // (Te dice cual es el nombre de la/s clase/s que están en la variable logo (en div logo, pero no dentro), en éste caso se llama logo)
+
+> "logo"
+
+______________
+
+
+--> logo.setAttribute("class/id",(lo que quieres cambiar") "logo_nuevo")
+
+> <div id="logo" class="logo_nuevo">
+> <div id="logo_nuevo" class="logo">
+
+
