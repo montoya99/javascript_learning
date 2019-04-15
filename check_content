@@ -1,0 +1,19 @@
+// SIRVE PARA NO CARGAR EL CONTENIDO HASTA QUE TODO EL INDEX HTML HAYA CARGADO PREVIAMENTE
+
+console.log("1");
+
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+
+   // TU CÓDIGO AQUÍ
+
+
+
+
+
+  });
+})();
+
+
+console.log("3");
