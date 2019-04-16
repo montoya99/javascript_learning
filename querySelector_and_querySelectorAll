@@ -1,0 +1,22 @@
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+
+    // querySelector ejemplo background red de w3schools
+
+    document.querySelector(".titulo").style.backgroundColor = "red";
+
+    // querySelector diferencia con querySelectorAll
+    // querySelector: si coges por ejemplo un h2 se muestra solo el primero
+    var h2 = document.querySelector("h2");
+    console.log(h2);
+
+
+  //_________________
+
+  // querySelectorAll: coge todos los elementos a diferencia del anterior que solo cogía el primero
+  var h2v2 = document.querySelectorAll("h2");
+  console.log(h2v2);
+
+  });
+})();
