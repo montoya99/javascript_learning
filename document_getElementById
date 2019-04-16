@@ -1,0 +1,24 @@
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+
+    // Ejemplo seleccionando todos los enlaces.
+    var enlaces = document.getElementsByTagName("a");
+    console.log(enlaces);
+
+    //Con esos enlaces ya seleccionados, podemos añadirle a cada uno de ellos un target= "_blank" y así cada vez que hagamos click en ellos se abre en una nueva pestaña)
+    for(var i=0; i<enlaces.length; i++) {
+      enlaces[i].setAttribute("target", "_blank");
+    }
+
+    //Otro ejemplo en el que mezclas un id(sidebar) y después de ese id coges con el tagname todos los enlaces.
+    var enlacesSidebar = document.getElementById("sidebar").getElementsByTagName("a");
+    console.log(enlacesSidebar);
+
+    for(var i=0; i<enlacesSidebar.length; i++) {
+      enlacesSidebar[i].setAttribute("href", "https:\\www.google.com");
+    }
+
+
+  });
+})();
