@@ -1,0 +1,36 @@
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+
+    // VAMOS A AGREGAR UNA NUEVA ENTRADA EN EL SIDEBAR (AGREGAMOS ENTRADA 6)
+    var enlacesSidebar = document.querySelectorAll("#sidebar ul");
+
+    //creamos el enlace
+    var nuevoEnlace = document.createElement ("A");
+
+    //indicamos el objetivo del link
+    nuevoEnlace.setAttribute
+
+    //creamos el nombre de "Entrada 6"
+    var nuevoTexto = document.createTextNode("Entrada 6");
+
+    // Unimos el elemento a (link/enlace) a el nombre "Entrada 6" con appendChild(inserta abajo)
+    nuevoEnlace.appendChild(nuevoTexto);
+
+    // Creamos una clase donde creamos el LI donde entroduciremos el nuevo enlace
+    var nuevaLista = document.createElement("LI");
+
+    // Unimos el nuevo enlace a la clase del nuevo LI que acabamos de crear
+    nuevaLista.appendChild(nuevoEnlace);
+
+    
+
+    // Unimos la clase con el elemento Sidebar del html que creamos lo primero (enlacesSidebar) a lo que acabamos de crear (nuevaLista)
+    enlacesSidebar[0].appendChild(nuevaLista);
+
+
+
+
+
+  });
+})();
