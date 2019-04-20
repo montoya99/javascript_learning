@@ -12,6 +12,30 @@
     viejoNodo.parentNode.replaceChild(nuevoNodo, viejoNodo);
     
 
-
   });
+ })();   
+    
+    
+    //________________________________
+    
+    
+    // REEMPLAZANDO UN ELEMENTO ACTUAL POR OTRO CREADO NUEVO
+    
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+
+
+    var viejoTitulo = document.querySelector("main h2");
+    var nuevoTitulo = document.createElement("h2");
+    var nuevoTexto = document.createTextNode("HOLA MUNDO");
+    
+    nuevoTitulo.appendChild(nuevoTexto);
+    viejoTitulo.parentNode.replaceChild(nuevoTitulo, viejoTitulo);
+
+    
+ });
 })();
+    
+
+
