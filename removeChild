@@ -1,0 +1,13 @@
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+  
+    var posts = document.querySelector(".sidebar ul li");
+
+    //variable.parentnode(estructura para acceder desde el padre, que seria el aside).removeChild(función eliminar) + (variable);
+    posts.parentNode.removeChild(posts);
+    
+    > Se elimina el post1 (Entrada 1, en este caso)
+    
+  });
+})();
