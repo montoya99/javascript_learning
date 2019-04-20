@@ -1,0 +1,17 @@
+// REEMPLAZAR ELEMENTOS
+
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+  
+    // VAMOS A INTERCAMBIAR UN TEXTO POR OTRO (REEMPLAZAR)
+    var viejoNodo = document.querySelector("main h2");
+    var nuevoNodo = document.querySelector("footer h2");
+
+    // viejoNodo(Elemento "Antiguo").parentNode(acceder desde el padre).replaceChild(función Reemplazar)+(lo nuevo, lo viejo);
+    viejoNodo.parentNode.replaceChild(nuevoNodo, viejoNodo);
+    
+
+
+  });
+})();
