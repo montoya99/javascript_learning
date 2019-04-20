@@ -1,0 +1,29 @@
+(function () {
+  'use strict'; // MODO ESTRICTO
+  document.addEventListener("DOMContentLoaded", function() {
+  
+  var sidebar = document.querySelector("aside");
+  var masVisitados = document.createElement("h2");
+  var textoVisitados = document.createTextNode("LUGARES MÁS VISITADOS");
+  var enlaceVisitados = document.createElement("a");
+  enlaceVisitados.setAttribute("href", "https://www.google.com");
+  enlaceVisitados.setAttribute("class", "linkVisitados");
+
+  enlaceVisitados.appendChild(masVisitados);
+  masVisitados.appendChild(textoVisitados);
+  sidebar.insertBefore(enlaceVisitados, sidebar.childNodes[6]);
+  
+
+
+  var contenido = document.querySelectorAll("main h2");
+
+  for (var i = 0; i < contenido.length; i++) {
+    var nuevoElemento = document.createElement("LI");
+    var nuevoTexto = document.createTextNode(contenido[i].firstChild.nodeValue);
+    nuevoElemento.setAttribute("class", "claseElemento");
+    nuevoElemento.appendChild(nuevoTexto);
+    sidebar.insertBefore(nuevoElemento, sidebar.childNodes[7]);
+  }
+  
+  });
+})();
