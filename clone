@@ -1,5 +1,5 @@
 (function () {
-  'use strict'; // MODO ESTRICTO
+  'use strict'; // MODO ESTRICTO .
   document.addEventListener("DOMContentLoaded", function() {
 
   var contenido = document.querySelectorAll("main");
