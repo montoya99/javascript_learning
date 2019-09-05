@@ -1,4 +1,4 @@
-// Destructuring.
+// Destructuring .
 
 const cliente = {
 	nombre: "Miguel",
