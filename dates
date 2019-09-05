@@ -1,4 +1,4 @@
-// FECHAS
+// FECHAS.
 
 let mesHoy = new Date().getMonth() + 1;
 console.log(mesHoy);
