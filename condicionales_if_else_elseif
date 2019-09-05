@@ -1,4 +1,4 @@
-// === --> IGUAL |||| !== --> DISTINTO/DIFERENTE
+// === --> IGUAL |||| !== --> DISTINTO/DIFERENTE .
 
 const puntuacion = 1000;
 const edad = 18;
